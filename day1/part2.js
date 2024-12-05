@@ -1,6 +1,6 @@
-const fs = require('fs');
+import { readContent } from '../utils/readContent';
 
-const content = fs.readFileSync('input.txt').toString();
+const content = await readContent();
 
 const rows = content.split('\n');
 

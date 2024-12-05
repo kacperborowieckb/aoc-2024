@@ -1,6 +1,6 @@
-const fs = require('fs');
+import { readContent } from '../utils/readContent';
 
-const content = fs.readFileSync('input.txt').toString();
+const content = await readContent();
 
 const games = content.split('\n').map((row) => row.split(' '));
 
